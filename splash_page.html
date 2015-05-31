@@ -19,27 +19,6 @@
                   </a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
-                  
-        <!--      
-          Will be here on most pages
-                  <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                      <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li class="dropdown-header">Nav header</li>
-                        <li><a href="#">Separated link</a></li>
-                        <li><a href="#">One more separated link</a></li>
-                      </ul>
-                    </li> 
-                  </ul>
-                    -->
                   <div class="nav navbar-nav navbar-right">
                     <form>  
                         <input type="text" placeholder="username"/>
@@ -53,52 +32,70 @@
                             <%= f.submit :value => "Login" %>
                         <% end %>
                     -->
-                    
-                    <!--For the create, I will take this out later
-                    <%= form_for :user, url: create_path do |f| %>
-                            <%= f.text_field :name %>
-                            <%= f.label(:name, "Username") %>
-                            <%= f.text_field :email%>
-                            <%= f.label(:email, "Email") %>
-                            <%= f.password_field :password %>
-                            <%= f.label(:password, "Password") %>
-                            <%= f.password_field :password_2%>
-                            <%= f.label(:password_2, "Confirm Password") %>
-                            <%= f.submit :value => "Create" %>
-                    <% end %>
-                    
-                    -->
                   </div>
-                </div><!--/.nav-collapse -->
+                </div>
               </div>
             </nav>
-            <div class="container">
-                <!-- Testing -->
-                CONTENT</br>
-                CONTENT</br>
-                CONTENT</br>
-                CONTENT</br>
-                CONTENT</br>
-                CONTENT</br>
-                CONTENT</br>
-                CONTENT</br>
-                CONTENT</br>
-                CONTENT</br>
-                CONTENT</br>
-                CONTENT</br>
-                CONTENT</br>
-                CONTENT</br>
-                CONTENT</br>
-                CONTENT</br>
-                CONTENT</br>
-                CONTENT</br>
-                CONTENT</br>
-                CONTENT</br>
-                CONTENT</br>
-                CONTENT</br>
+            <div class="container vertical-align">
+                <div class="row vertical-align">   
+                    <div id="splash_text" class="col-md-5 vertical-align">
+                        <div class="black">
+                            <p class="big-text">
+                                Fed up with your art being <span class="dark-red bold">buried </span> and never getting seen?
+                            </p>
+                            <p class="big-text">
+                                Tired of your voice echoing in an <span class="dark-red bold">empty stadium</span>? </br>
+                            </p>
+                            <p class="big-text">
+                                Join a community whose goal is to <span class="dark-red bold">help</span> each other be heard and where stray <span class="dark-red bold">sparks</span> start <span class="dark-red bold">wildfires</span>! </br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="form-container">
+                            <h3 >
+                                Sign up!
+                            </h3>
+                            <form>
+                                <input class="long" type="text" placeholder='email'/>
+                                <div class="clearer">&nbsp;</div>
+                                <input class="long" type="text" placeholder='username'/>
+                                <div class="clearer">&nbsp;</div>
+                                <input class="long" type="password" placeholder='password'/>
+                                <div class="clearer">&nbsp;</div>
+                                <input class="long" type="password" placeholder='confirm password'/>
+                                <div class="clearer">&nbsp;</div>
+                                <div class="clearer">&nbsp;</div>
+                                <input type="submit" value='Sign Up'/>
+                                <div class="clearer">&nbsp;</div>
+                                <div class="clearer">&nbsp;</div>
+                            <form>
+                        </div>
+                        <!--For the create, erb
+                            <%= form_for :user, url: create_path do |f| %>
+                                <%= f.text_field :email, :placeholder => "email"%>
+                                <div class="clearer">&nbsp;</div>
+                                <%= f.text_field :name, :placeholder => "username"%>
+                                <div class="clearer">&nbsp;</div>
+                                <%= f.password_field :password, :placeholder => "password"%>
+                                <div class="clearer">&nbsp;</div>
+                                <%= f.password_field :password_2 :placeholder => "confirm password"%>
+                                <div class="clearer">&nbsp;</div>
+                                <%= f.submit :value => "Sign Up!" %>
+                                <div class="clearer">&nbsp;</div>
+                            <% end %>
+                            
+                            :class => 'submit_class_name_here'
+                        -->
+                    </div>
+                </div>
             </div>
             <!-- Leave push in there, it's for the footer -->
-            <div id="push"></div></div>
+            <div id="push"></div>
+        </div>
             <div id="footer">
                 <a class="red-link" href="./about.html">About</a>
             </div>

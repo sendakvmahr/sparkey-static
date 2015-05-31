@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="./css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="./css/default.css">
+        <script src="./js/jquery-2.1.1.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+    </header>
+    <body>
+        <div id="wrap">
+            <nav class="navbar navbar-static-top">
+              <div class="container">
+                <div class="navbar-header">
+                  <img id="logo" src="./images/Sparkey Logo Orange.png">
+                  <a class="navbar-brand" href="#">
+                    Spar<span class="dark-red">k</span>ey
+                  </a>
+                </div>
+                <!-- Navbar should change whether or not user is logged in, ideally, handle in ruby -->
+                <div id="navbar" class="navbar-collapse collapse">
+                    <div class="navbar-center-wrapper">
+                        <ul class="nav navbar-nav navbar-center">
+                            <li><a href="./roulette_config.html">Roulette</a></li>
+                            <li><a href="./browse.html">Browse</a></li>
+                            <li><a href="./submit.html">Submit</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav navbar-nav navbar-right">
+                        <div id="user-options">
+                            <a href="./profile.html" class="red-link"> Username </a>
+                            <span class="divider">|</span>
+                            <a href="./splash_page.html" class="red-link"> Logout </a>
+                        </div>
+                    </div>
+                </div><!--/.nav-collapse -->
+              </div>
+            </nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="big-text">
+                            Sparkey
+                        </h2>
+                        <p>
+                            Our personality is derived from how people perceive the things we do and how we do them; the things we say and how we say them. On Sparkey, users provide feedback to each other by perceiving the vibe a post is giving off--whether it is eerie, noble, depressing, uplifing, etc--and over time, the post starts to accumulate a sense of personality. Each post's bank of vibes will be channeled to the author's profile page, where a conglomeration of vibes will be used to reflect what that user's personality is and what that user is known for.
+                        </p>
+                        <h2 class="big-text">
+                            Roulette
+                        </h2>
+                        <p>
+                            Sparkey is focused on giving everyone a fair chance at being heard and this is achieved through the Roulette. Users may load their Roulette with preconfigured options and Sparkey will fetch results that match the search parameters specified, with the caveat that Sparkey will always favor posts that have less views.
+                        </p>
+                        <p>
+                            The Roulette can be set up to return posts that are of the following types: images, text documents, and videos. Additionally, the Roulette can be told to only fetch posts that have the specified vibes associated with them. For example, if Mary only wanted the Roulette to load horror stories, she would set her Roulette configuration to be "text documents" and with the specified vibes of "scary", "horror", "creepy", etc. The user is then returned a set of posts that match those criterias and the user looks at each post individually, perceiving the vibes of the post by typing one word descriptions of what the post made them feel into the input box and making comments if the user is inclined. The user may abort the set at anytime and reconfigure the Roulette for another round.
+                        </p>
+                        <h2 class="big-text">
+                            Browsing
+                        </h2>
+                        <p>
+                            Each post can also be Sparked, which is Sparkey's version of the "Like" button on social media. This comes in handy when the user wants to switch from viewing seemingly random posts to browsing popular posts ranked by the number of Sparks a post has.
+                        </p>
+                        <div class="clearer">&nbsp;</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Leave push in there, it's for the footer -->
+            <div id="push"></div></div>
+            <div id="footer">
+                <a class="red-link" href="./about.html">About</a>
+            </div>
+        </div>
+    </body>
+</html> 
