@@ -13,6 +13,10 @@ html, body {
     color: #790000;
 }
 
+.black {
+    color: #000000;
+}
+
 /* Debugging */
 .green {
     background: green;
@@ -20,6 +24,10 @@ html, body {
 
 .blue {
     background: blue;
+}
+
+.red {
+    background: red;
 }
 
 #navbar, .navbar {
@@ -82,7 +90,7 @@ html, body {
     width: 15rem;
 }
 
-.nav input[type=text]:focus, .nav input[type=password]:focus, input[type=submit]:focus {
+input[type=text]:focus, input[type=password]:focus, input[type=submit]:focus {
     outline: none;
 }
 
@@ -196,4 +204,53 @@ input[type=submit]:active {
 .navbar-nav  li:last-child a{
     border-bottom-right-radius: 1rem;
     border-left: 3px solid #4F2601;
+}
+
+.big-text {
+    font-size: 2.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.container.vertical-align {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.vertical-align {
+    height: 100%;
+    display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+	align-items: center;
+}
+
+.form-container {
+    margin: auto;
+    text-align: center;
+    border: 3px solid #4F2601;
+    background: #A3612E;
+    border-radius: 3rem;
+}
+
+.form-container .long{
+    width:80%;
+}
+
+.clearer {
+    clear: both;
+}
+
+#splash_text {
+    padding-left: 6rem;
+}
+
+.bold {
+    font-weight: bold;
 }
