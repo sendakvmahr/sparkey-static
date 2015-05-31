@@ -13,7 +13,7 @@
 	position:relative;
 }
 
-.page img
+.pageimage
 {
 	max-width:100%;
 	z-index:10;
@@ -25,7 +25,14 @@
 	z-index:100;
 	position:absolute;
 	width:95%;
+	height:85%;
 	top:2em;
+}
+
+.pagetitle
+{
+	font-size:2em;
+	font-weight:bold;
 }
 
 #leftpage
@@ -42,5 +49,20 @@
 #rightpage
 {
 	float:right;
-	background-size: contain;
+}
+
+#profilepic
+{
+	max-width:30%;
+}
+
+#activity, #activity td, #activity th
+{
+	margin:0 auto;
+	border: 1px solid black;
+}
+
+#activity td, #activity th
+{
+	padding:5px;
 }
