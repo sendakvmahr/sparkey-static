@@ -90,11 +90,11 @@ html, body {
     width: 15rem;
 }
 
-input[type=text]:focus, input[type=password]:focus, input[type=submit]:focus {
+input, textarea {
     outline: none;
 }
 
-input[type=text], input[type=password] {
+input[type=text], input[type=password], textarea{
     border: 3px solid #4F2601;
     font-size: 1.5rem;
     padding-left: .5rem;
@@ -118,6 +118,32 @@ input[type=submit]:active {
     border: 3px solid #000000;
     background: #B73807;
     color: #000000;
+}
+
+textarea {
+    resize: none;
+    min-height: 12rem;
+}
+
+input[type=file] {
+    border: 3px solid #4F2601;
+    font-size: 1.5rem;
+    margin: auto;
+    height: 15rem;
+    text-align: center;
+    padding-top: 7rem;
+    position: relative;
+}
+
+input[type=file]:active{
+    outline: none;
+}
+
+input[type=file]:hover  {
+    outline: none;
+    border: 3px solid #FEF1B5;
+    color: #FEF1B5;
+    background: #4F2601;
 }
 
 #wrap {
@@ -237,6 +263,17 @@ input[type=submit]:active {
     border: 3px solid #4F2601;
     background: #A3612E;
     border-radius: 3rem;
+}
+
+.form-container h3 {
+    background: #764116;
+    margin-top: 0;
+    margin-bottom: 2.5rem;
+    padding: 1rem;
+    color: #FEF1B5;
+    border-bottom: 3px solid #4F2601;
+    border-top-left-radius: 2.5rem;
+    border-top-right-radius: 2.5rem;
 }
 
 .form-container .long{
