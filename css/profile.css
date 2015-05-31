@@ -1,0 +1,46 @@
+#profile
+{
+	margin-top:30px;
+	margin-left:20%;
+	width:60%;
+}
+
+.page
+{
+	width:50%;
+	height:auto;
+	text-align:center;
+	position:relative;
+}
+
+.page img
+{
+	max-width:100%;
+	z-index:10;
+	vertical-align:middle;
+}
+
+.pagetext
+{
+	z-index:100;
+	position:absolute;
+	width:95%;
+	top:2em;
+}
+
+#leftpage
+{
+	float:left;
+	background-size: 100%;
+}
+
+#leftpagetext
+{
+	right:0;
+}
+
+#rightpage
+{
+	float:right;
+	background-size: contain;
+}
