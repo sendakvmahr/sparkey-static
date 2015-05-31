@@ -309,10 +309,41 @@ input[type=file]:hover  {
     left: 0;
     right: 0;
     bottom: 0;
-    /* -webkit-filter: blur(10px);  */
-    /* filter: blur(10px); */
+    
 }
 
+.browse-item img {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translateY(-50%) translateX(-50%);
+	-webkit-filter: blur(10px);
+	filter: blur(10px);
+	z-index:1;
+}
+
+.item-info{
+	z-index:100;
+	width:100%;
+	position: absolute;
+}
+
+.item-table{
+	position:absolute;
+	margin-top:2em;
+	width:100%;
+	color:white;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: black;
+}
+
+.item-table td{
+	font-size:1.5em;
+}
+
+.icon{
+	font-size:3em !important;
+}
 
 .navbar-center-wrapper {
     position: absolute;
