@@ -459,10 +459,14 @@ input[type=file]:hover  {
     float: left;
 }
 
-#roulette-tab.extended .images img{
+#roulette-tab.extended a    {
     height: 5rem;
-    width: auto;
-    padding-left: 1.5rem;
+    width: 6rem;
+    overflow: hidden;
+    margin: 1rem;
+}
+#roulette-tab.extended .images img{
+    padding-left: 1.5rem
 }
 
 #image-box {
@@ -485,7 +489,12 @@ input[type=file]:hover  {
 }
 
 .images a img {
-    margin-top: -10px;
+    position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translateY(-50%) translateX(-50%);
+	-webkit-filter: blur(10px);
+	filter: blur(10px);
 }
 
 .images a::before {
@@ -493,15 +502,18 @@ input[type=file]:hover  {
     font-size: 1.3em;
     font-family:'Glyphicons Halflings';
     position: absolute;
-    top: 2rem;
-    left: 3rem;
+    top: .7rem;
+    left: 1rem;
+    z-index: 1;
 }
 
 .video::before {
     content: '\e029';
 }
 
-.image::before {
+.images .image::before {
+    /* Image glyphicon is slightly shorter than the others...*/
+    top: .5rem;
     content: '\e060';
 }
 
@@ -513,4 +525,12 @@ input[type=file]:hover  {
     text-wrap: wrap;
     word-wrap: break-word;
     text-align: left;
+}
+
+#vibe-box  img{
+    width: 80%;
+}
+
+video {
+    width: 100%;
 }

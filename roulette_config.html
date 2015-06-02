@@ -25,6 +25,15 @@
 				font-weight:bold;
 			}
         </style>
+        <script>
+        <!-- Should be done with ruby -->
+            $(function() {
+                $("form").submit(function(evt) {
+                    event.preventDefault();
+                    window.location = './~roulette_search_image_example2.html';
+                });
+            });
+        </script>
     </header>
     <body>
         <div id="wrap">
@@ -39,14 +48,14 @@
                 <div id="navbar" class="navbar-collapse collapse">
                     <div class="navbar-center-wrapper">
                         <ul class="nav navbar-nav navbar-center">
-                            <li><a href="./roulette_config.html">Roulette</a></li>
+                            <li class="active"><a href="./roulette_config.html">Roulette</a></li>
                             <li><a href="./browse.html">Browse</a></li>
-                            <li class="active"><a href="./submit.html">Submit</a></li>
+                            <li><a href="./submit.html">Submit</a></li>
                         </ul>
                     </div>
                     <div class="nav navbar-nav navbar-right">
                         <div id="user-options">
-                            <a href="./profile.html" class="red-link"> Username </a>
+                            <a href="./profile.html" class="red-link"> Lassie </a>
                             <span class="divider">|</span>
                             <a href="./splash_page.html" class="red-link"> Logout </a>
                         </div>
@@ -81,7 +90,7 @@
 										<option value="50">50</option>
 									</select>
 								<div class="clearer">&nbsp;</div>
-                                <input type="submit" value='Go!'/>
+                                <input type="submit" value='Go!' onsubmit="return './~roulette_search_image_example2.html'"/>
                                 <div class="clearer">&nbsp;</div>
                             <form>
                         </div>
